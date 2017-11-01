@@ -1,0 +1,4 @@
+#! /bin/bash -e
+
+docker tag flask:$1 ${2}:5000/flask:$1
+docker push ${2}:5000/flask:$1
